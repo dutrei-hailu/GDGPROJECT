@@ -1,27 +1,22 @@
-import React from "react";
-import UserCard from "./UserCard";
-import "./App.css"; // Import the CSS file
+import {Routes,Route} from 'react-router-dom'
+import { Home } from './components/Home'
+import { About } from './components/About'
+import { Navbar } from './components/Navbar'
 
-const App = () => {
+
+
+function App() {
   return (
-    <div className="container">
-      <UserCard
-        name="Abebe"
-        bio="Frontend Developer | Tech Enthusiast"
-        image="https://via.placeholder.com/80"
-      />
-      <UserCard
-        name="Kebede"
-        bio="UI/UX Designer | Coffee Lover"
-        image="https://via.placeholder.com/80"
-      />
-      <UserCard
-        name="Ayele"
-        bio="Full Stack Developer | Gamer"
-        image="https://via.placeholder.com/80"
-      />
-    </div>
+      <>
+        <Navbar/>
+        <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='About' element={<About />}></Route>
+      </Routes>
+      </>
+      
+    
   );
-};
+}
 
-export default App;
+export default App

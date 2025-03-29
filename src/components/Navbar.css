@@ -1,0 +1,40 @@
+/* Navbar.css */
+.navbar {
+    padding: 16px;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 24px; /* Space between links */
+  }
+  
+  .navbar-links a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black; /* Text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #1d4ed8; /* Change to blue when hovering */
+  }
+  
+  .navbar-button {
+    padding: 8px 16px;
+    background-color: #6a0dad; /* Purple background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-button:hover {
+    background-color: #520a8f; /* Darker purple on hover */
+  }
+  

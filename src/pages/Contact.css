@@ -1,0 +1,54 @@
+/* Contact.css */
+.contact-container {
+    display: flex;
+    justify-content: center;  /* Centers the content horizontally */
+    align-items: center;      /* Centers the content vertically */
+    height: 100vh;            /* Full viewport height */
+    background-color: rgb(95, 55, 100);    /* Red color for the background outside the box */
+    margin: 0;
+  }
+  
+  .contact-content {
+    padding: 20px;
+    text-align: center;
+    background-color: #b68ebd; /* White background for the box */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px; /* Keeps the box width within a limit */
+    display: flex;
+    flex-direction: column; /* Align title and description vertically */
+    gap: 20px; /* Adds space between the title and description */
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; /* Dark text */
+    margin-bottom: 10px; /* Adds space between title and description */
+  }
+  
+  .contact-description {
+    font-size: 1rem; /* Make text size smaller */
+    color: #0c0606; /* Grayish text */
+    line-height: 1.6;
+    padding: 20px; /* Padding inside the small box */
+    border: 1px solid #0e050c; /* Light border around description box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #da99cf; /* Light background color for description box */
+    margin-top: 10px; /* Space between title and description box */
+    max-width: 500px; /* Restrict width of the description box */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-description ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+  }
+  
+  .contact-description li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
